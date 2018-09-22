@@ -1,5 +1,7 @@
 import requests
 import json
+from http.server import HTTPServer
+from PythonTest.Server import Server as S
 from pprint import pprint
 
 # url = "http://172.16.0.1:8001/FieldData/GetData"
@@ -62,3 +64,6 @@ ballpos = pixelmap(ball[0], ball[1])
 rtrianglepos = pixelmap(redteam['triangle'][0], redteam['triangle'][1])
 print("Real Ball Position: " + str(ballpos))
 print("Red Triangle Position: " + str(rtrianglepos))
+
+httpd = HTTPServer(('', 8000), S)
+httpd.serve_forever()
