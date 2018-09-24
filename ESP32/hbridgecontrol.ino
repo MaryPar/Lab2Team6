@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 const int AIN1 = 25;
 const int AIN2 = 26;
 const int BIN1 = 27;

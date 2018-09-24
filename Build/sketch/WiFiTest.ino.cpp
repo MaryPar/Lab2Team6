@@ -51,7 +51,7 @@ void loop() {
         Serial.println("HTTP > 0");
         Serial.println(payload);
       } else {
-        Serial.println("Error with HTTP Request!!");
+        Serial.println("Error with HTTP!");
       }
       Serial.println(httpCode);
     }

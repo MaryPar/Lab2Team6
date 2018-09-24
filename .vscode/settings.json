@@ -6,5 +6,6 @@
     "arduino.skipHeaderProvider": false,
     "arduino.additionalUrls": [
         "https://dl.espressif.com/dl/package_esp32_index.json"
-    ]
+    ],
+    "python.pythonPath": "C:\\Users\\jacob\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
 }
