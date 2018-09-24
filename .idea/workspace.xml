@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59617a02-4a6a-4856-a3c8-7119c358e716" name="Default Changelist" comment="Added WiFiTest to ESP32 Folder">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonTest/Client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/WiFiTest.ino.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Build/WiFiTest.ino.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/WiFiTest.ino.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Build/WiFiTest.ino.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/arduino.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/arduino.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/WiFiTest.ino.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/WiFiTest.ino.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/WiFiTest.ino.partitions.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/arduino.ar" beforeDir="false" afterPath="$PROJECT_DIR$/Build/arduino.ar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/build.options.json" beforeDir="false" afterPath="$PROJECT_DIR$/Build/build.options.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/includes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Build/includes.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/libraries/HTTPClient/HTTPClient.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/libraries/HTTPClient/HTTPClient.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/WiFiClientSecure.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/WiFiClientSecure.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/ssl_client.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/ssl_client.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/preproc/ctags_target_for_gcc_minus_e.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build/preproc/ctags_target_for_gcc_minus_e.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/H-bridge control" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/WiFiTest/WiFiTest.ino" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/WiFiTest/WiFiTest.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/WiFiTest.ino.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonTest/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonTest/Test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,40 +44,53 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ino" value="2" />
-          <entry key="py" value="7" />
+          <entry key="md" value="1" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="py" value="1117" />
+          <entry key="md" value="162" />
+          <entry key="py" value="1762" />
           <entry key="txt" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="162" />
           <entry key="PLAIN_TEXT" value="98" />
-          <entry key="Python" value="1117" />
+          <entry key="Python" value="1762" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonTest/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonTest/Client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -105,14 +127,16 @@
         <option value="$PROJECT_DIR$/PythonTest/venv/TCPServer.py" />
         <option value="$PROJECT_DIR$/PythonTest/Bluetooth.py" />
         <option value="$PROJECT_DIR$/PythonTest/venv/Server.py" />
-        <option value="$PROJECT_DIR$/PythonTest/Test.py" />
         <option value="$PROJECT_DIR$/PythonTest/Server.py" />
+        <option value="$PROJECT_DIR$/Documentation/CommandCenter.md" />
+        <option value="$PROJECT_DIR$/PythonTest/Test.py" />
+        <option value="$PROJECT_DIR$/PythonTest/Client.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="983" />
+    <option name="width" value="896" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -130,6 +154,11 @@
             <path>
               <item name="Team6Lab2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team6Lab2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Team6Lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team6Lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team6Lab2" type="b2602c69:ProjectViewProjectNode" />
@@ -179,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.Client">
     <configuration name="Bluetooth" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Team6Lab2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,6 +222,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTest/Bluetooth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Team6Lab2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTest/Client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,9 +275,11 @@
     <list>
       <item itemvalue="Python.Test" />
       <item itemvalue="Python.Bluetooth" />
+      <item itemvalue="Python.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Client" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.Bluetooth" />
       </list>
@@ -262,16 +314,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="983" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="896" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11534391" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1958042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35596934" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -308,6 +360,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Documentation/CommandCenter.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonTest/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonTest/Server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -319,13 +391,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonTest/Test.py">
+    <entry file="file://$PROJECT_DIR$/PythonTest/Client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>

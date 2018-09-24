@@ -1,9 +1,7 @@
 import requests
 import json
 from http.server import HTTPServer
-# from PythonTest.Server import Server as S
-import PythonTest
-from Server import Server as S
+from PythonTest.Server import Server as S
 
 # url = "http://172.16.0.1:8001/FieldData/GetData"
 # f = requests.get(url)
