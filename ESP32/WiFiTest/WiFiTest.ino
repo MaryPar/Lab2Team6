@@ -1,11 +1,3 @@
-/*
- *  This sketch sends data via HTTP GET requests to data.sparkfun.com service.
- *
- *  You need to get streamId and privateKey at data.sparkfun.com and paste them
- *  below. Or just customize this script to talk to other HTTP servers.
- *
- */
-
 #include <WiFi.h>
 #include <HTTPClient.h>
 
@@ -43,34 +35,16 @@ void loop() {
 
     if((WiFi.status() == WL_CONNECTED)) {
       HTTPClient http;
-      http.begin("http://192.168.137.1:8000/FieldData.json");
+      http.begin("http://192.168.137.1:8000/");
       int httpCode = http.GET();
 
       if (httpCode > 0) {
         String payload = http.getString();
-        Serial.println(httpCode);
+        Serial.println("HTTP > 0");
         Serial.println(payload);
       } else {
-        Serial.println(httpCode);
+        Serial.println("Error with HTTP Request!!");
       }
+      Serial.println(httpCode);
     }
-
-//    if (!client.connect(server, 8000)) {
-//        Serial.println("connection failed");
-//        return;
-//    }
-//
-//    Serial.print("Requesting URL...");
-//
-//    client.println("GET / HTTP/1.0");
-//    client.println();
-//
-//    // Read all the lines of the reply from server and print them to Serial
-//    while(client.available()) {
-//      String r = client.readStringUntil('\r');
-//      Serial.println(r);
-//    }
-//
-//    Serial.println();
-//    Serial.println("closing connection");
 }

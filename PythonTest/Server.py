@@ -7,8 +7,8 @@ class Server(BaseHTTPRequestHandler):
 
     def do_GET(self):
         self.send_response(200)
-        self.send_header('Content-type', 'application/json'.encode())
+        self.send_header('Content-type', 'text/html'.encode())
         self.end_headers()
-        #self.wfile.write("Hello, world!".encode())
+        self.wfile.write("Hello, world!".encode())
         return
 

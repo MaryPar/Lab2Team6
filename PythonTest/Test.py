@@ -2,7 +2,6 @@ import requests
 import json
 from http.server import HTTPServer
 from PythonTest.Server import Server as S
-from pprint import pprint
 
 # url = "http://172.16.0.1:8001/FieldData/GetData"
 # f = requests.get(url)
@@ -49,7 +48,7 @@ xrange = xmax - xmin
 yrange = ymax - ymin
 
 print("Original Ball: " + str(ball))
-print("Coords: " + str(xcoords) + " "+ str(ycoords))
+print("Coords: " + str(xcoords) + " " + str(ycoords))
 print("Max (x,y): " + str(xmax) + " " + str(ymax))
 print("Min (x,y): " + str(xmin) + " " + str(ymin))
 print("Range (x,y): " + str(xrange) + " " + str(yrange))
