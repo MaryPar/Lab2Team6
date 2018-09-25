@@ -2,13 +2,6 @@
 Contributors:
 Ian Kriner, Jacob Siau
 */
-#include <Arduino.h>
-#include <WiFi.h>
-#include <HTTPClient.h>
-
-const char *ssid = "DESKTOP-PTFSVRE 2560";
-const char *password = "E404h58]";
-
 const int Motors[4] = {12, 15, 27, 33}; // Motor output pins [A1N1, A1N2, B1N1, B1N2]
 
 const int Stop[4] = {0, 0, 0, 0};         // Stop pattern
@@ -26,29 +19,13 @@ volatile bool motionenabled;     // global motion enabling/disabling variable
 volatile long debounce_time = 0; // for debouncing
 volatile long current_time = 0;
 
+RClient 
+
 // setup is the setup function that runs once at the start of the Arduino-C program
 void setup()
 {
     Serial.begin(115200);
     delay(10);
-
-    Serial.println();
-    Serial.println();
-    Serial.print("Connecting to ");
-    Serial.println(ssid);
-
-    WiFi.begin(ssid, password);
-
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(500);
-        Serial.print(".");
-    }
-
-    Serial.println("");
-    Serial.println("WiFi connected");
-    Serial.println("IP address: ");
-    Serial.println(WiFi.localIP());
 
     // 1. setting pinmodes (pin, OUTPUT/INPUT)
     // 2. setting up PWM channels (channel, frequency, resolution)
@@ -70,40 +47,17 @@ void setup()
 // loop is the main loop of the Arduino-C program
 void loop()
 {
-    delay(6000);
-    if ((WiFi.status() == WL_CONNECTED))
+    if (!motionenabled)
     {
-        HTTPClient http;
-        http.begin("http://192.168.137.1:8000/");
-        int httpCode = http.GET();
-
-        if (httpCode > 0)
-        {
-            String payload = http.getString();
-            Serial.println("HTTP > 0");
-            Serial.println(payload);
-            int state = (int) payload[0] - 48;
-            Serial.println(state);
-            hBridge(state);
-        }
-        else
-        {
-            Serial.println("Error with HTTP!");
-        }
-        Serial.println(httpCode);
+        Serial.println("[X]");
+        hBridge(-1);
     }
-
-    // if (!motionenabled)
-    // {
-    //     Serial.println("[X]");
-    //     hBridge(-1);
-    // }
-    // else
-    // {
-    //     hBridge(currentstate % 6);
-    // }
-    // currentstate++;
-    // delay(1000);
+    else
+    {
+        hBridge(currentstate % 6);
+    }
+    currentstate++;
+    delay(1000);
 }
 
 // Hbridge takes a integer representing a direction case and writes a pattern based on it
@@ -112,7 +66,6 @@ void loop()
 // void hBridge(int dir, int lbias, int rbias)
 void hBridge(int dir)
 {
-    Serial.println("hBridge called");
     switch (dir)
     {
     case -1: // -1: Stop
