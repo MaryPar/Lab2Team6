@@ -9,6 +9,11 @@ Ian Kriner, Jacob Siau
 */
 # 5 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\MoveTest\\MoveTest.ino"
 # 6 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\MoveTest\\MoveTest.ino" 2
+# 7 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\MoveTest\\MoveTest.ino" 2
+# 8 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\MoveTest\\MoveTest.ino" 2
+
+const char *ssid = "DESKTOP-PTFSVRE 2560";
+const char *password = "E404h58]";
 
 const int Motors[4] = {12, 15, 27, 33}; // Motor output pins [A1N1, A1N2, B1N1, B1N2]
 
@@ -18,14 +23,13 @@ const int Backward[4] = {0, 255, 0, 255}; // Backward pattern
 const int Left[4] = {255, 0, 0, 255}; // Left pattern
 const int Right[4] = {0, 255, 255, 0}; // Right pattern
 
-
 const int freq = 30000; // PWM output frequency [Hz]
 const int res = 8; // resolution for PWM channels [b]
 
 byte interruptPin = 13; // pushbutton interrupt input (also tied to LED1)
-int currentstate = 0; // current state for hBridge 
+int currentstate = 0; // current state for hBridge
 volatile bool motionenabled; // global motion enabling/disabling variable
-volatile long debounce_time = 0; // for debouncing 
+volatile long debounce_time = 0; // for debouncing
 volatile long current_time = 0;
 
 // setup is the setup function that runs once at the start of the Arduino-C program
@@ -33,6 +37,24 @@ void setup()
 {
     Serial.begin(115200);
     delay(10);
+
+    Serial.println();
+    Serial.println();
+    Serial.print("Connecting to ");
+    Serial.println(ssid);
+
+    WiFi.begin(ssid, password);
+
+    while (WiFi.status() != WL_CONNECTED)
+    {
+        delay(500);
+        Serial.print(".");
+    }
+
+    Serial.println("");
+    Serial.println("WiFi connected");
+    Serial.println("IP address: ");
+    Serial.println(WiFi.localIP());
 
     // 1. setting pinmodes (pin, OUTPUT/INPUT)
     // 2. setting up PWM channels (channel, frequency, resolution)
@@ -49,23 +71,45 @@ void setup()
     pinMode(interruptPin, 0x05);
     attachInterrupt((((interruptPin)<40)?(interruptPin):-1), toggleMotion, 0x02);
     motionenabled = true;
-
 }
 
 // loop is the main loop of the Arduino-C program
 void loop()
 {
-    if (!motionenabled)
+    delay(6000);
+    if ((WiFi.status() == WL_CONNECTED))
     {
-        Serial.println("[X]");
-        hBridge(-1);
+        HTTPClient http;
+        http.begin("http://192.168.137.1:8000/");
+        int httpCode = http.GET();
+
+        if (httpCode > 0)
+        {
+            String payload = http.getString();
+            Serial.println("HTTP > 0");
+            Serial.println(payload);
+            int state = (int) payload[0] - 48;
+            Serial.println(state);
+            hBridge(state);
+        }
+        else
+        {
+            Serial.println("Error with HTTP!");
+        }
+        Serial.println(httpCode);
     }
-    else
-    {
-        hBridge(currentstate%6);
-    }
-    currentstate++;
-    delay(1000);
+
+    // if (!motionenabled)
+    // {
+    //     Serial.println("[X]");
+    //     hBridge(-1);
+    // }
+    // else
+    // {
+    //     hBridge(currentstate % 6);
+    // }
+    // currentstate++;
+    // delay(1000);
 }
 
 // Hbridge takes a integer representing a direction case and writes a pattern based on it
@@ -74,6 +118,7 @@ void loop()
 // void hBridge(int dir, int lbias, int rbias)
 void hBridge(int dir)
 {
+    Serial.println("hBridge called");
     switch (dir)
     {
     case -1: // -1: Stop
@@ -84,7 +129,7 @@ void hBridge(int dir)
     }
     case 0: // 0: Forward
     {
-        writeOut(Forward);
+        // writeOut(Forward);
         Serial.println("\t[F]");
         break;
     }
@@ -128,11 +173,14 @@ void toggleMotion()
 {
     Serial.println("[~M]");
     current_time = millis();
-    if ((current_time - debounce_time) > 200) {
-        if (motionenabled) {
+    if ((current_time - debounce_time) > 200)
+    {
+        if (motionenabled)
+        {
             motionenabled = false;
         }
-        else {
+        else
+        {
             motionenabled = true;
         }
     }

@@ -70,7 +70,7 @@ void setup()
 // loop is the main loop of the Arduino-C program
 void loop()
 {
-
+    delay(6000);
     if ((WiFi.status() == WL_CONNECTED))
     {
         HTTPClient http;
@@ -82,6 +82,9 @@ void loop()
             String payload = http.getString();
             Serial.println("HTTP > 0");
             Serial.println(payload);
+            int state = (int) payload[0] - 48;
+            Serial.println(state);
+            hBridge(state);
         }
         else
         {
@@ -109,6 +112,7 @@ void loop()
 // void hBridge(int dir, int lbias, int rbias)
 void hBridge(int dir)
 {
+    Serial.println("hBridge called");
     switch (dir)
     {
     case -1: // -1: Stop
@@ -119,7 +123,7 @@ void hBridge(int dir)
     }
     case 0: // 0: Forward
     {
-        writeOut(Forward);
+        // writeOut(Forward);
         Serial.println("\t[F]");
         break;
     }

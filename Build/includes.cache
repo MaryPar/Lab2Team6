@@ -11,6 +11,86 @@
   },
   {
     "Sourcefile": "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\Build\\sketch\\MoveTest.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\Build\\sketch\\MoveTest.ino.cpp",
+    "Include": "HTTPClient.h",
+    "Includepath": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\HTTPClient\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\Build\\sketch\\MoveTest.ino.cpp",
+    "Include": "WiFiClientSecure.h",
+    "Includepath": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFiClientSecure\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\Build\\sketch\\MoveTest.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\ETH.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiAP.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiClient.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiScan.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiServer.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFi\\src\\WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\HTTPClient\\src\\HTTPClient.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFiClientSecure\\src\\WiFiClientSecure.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\libraries\\WiFiClientSecure\\src\\ssl_client.cpp",
     "Include": "",
     "Includepath": ""
   }
