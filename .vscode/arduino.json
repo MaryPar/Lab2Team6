@@ -1,7 +1,7 @@
 {
-    "port": "COM3",
+    "port": "COM4",
     "board": "esp32:esp32:esp32",
     "configuration": "PSRAM=disabled,PartitionScheme=default,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none",
-    "sketch": "ESP32\\WiFiServerTest2\\WiFiServerTest2.ino",
+    "sketch": "ESP32\\MoveTest\\MoveTest.ino",
     "output": "./Build"
 }

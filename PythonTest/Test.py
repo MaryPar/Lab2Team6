@@ -3,11 +3,13 @@ import json
 from http.server import HTTPServer
 from PythonTest.Server import Server as S
 
-# url = "http://172.16.0.1:8001/FieldData/GetData"
-# f = requests.get(url)
+url = "http://172.16.0.1:8001/FieldData/GetData"
+f = requests.get(url)
 
-f = open('FieldData.json', 'r')
-data = json.load(f)
+# f = open('FieldData.json', 'r')
+#data = json.load(f)
+data = f.json()
+
 
 print("Original Object: " + str(data))
 
@@ -64,5 +66,9 @@ rtrianglepos = pixelmap(redteam['triangle'][0], redteam['triangle'][1])
 print("Real Ball Position: " + str(ballpos))
 print("Red Triangle Position: " + str(rtrianglepos))
 
-httpd = HTTPServer(('', 8000), S)
-httpd.serve_forever()
+# httpd = HTTPServer(('', 8000), S)
+# httpd.serve_forever()
+url2 = "http://192.168.137.214:80/"
+r = requests.get(url2)
+text = str(r.text)
+print(text)
