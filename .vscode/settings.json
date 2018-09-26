@@ -8,5 +8,8 @@
         "https://dl.espressif.com/dl/package_esp32_index.json"
     ],
     "python.pythonPath": "C:\\Users\\jacob\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "fstream": "cpp"
+    }
 }

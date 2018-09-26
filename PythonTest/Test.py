@@ -68,6 +68,8 @@ print("Red Triangle Position: " + str(rtrianglepos))
 
 httpd = HTTPServer(('', 8000), S)
 httpd.serve_forever()
+
+# Below is client commands
 # url2 = "http://192.168.137.214:80/"
 # r = requests.get(url2)
 # text = str(r.text)
