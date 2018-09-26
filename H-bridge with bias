@@ -1,0 +1,126 @@
+
+int bias; //direction biasing global variable 
+int AIN1=25;
+int AIN2=26;
+int BIN1=27;
+int BIN2=28;
+
+
+void setup()
+{
+//sets up serial connection line
+Serial.begin (115200);
+delay(10); //let connection be established
+
+// sets the pins as outputs:
+  pinMode(AIN1, OUTPUT);
+  pinMode(AIN2, OUTPUT);
+  pinMode(BIN1, OUTPUT);
+  pinMode(BIN2, OUTPUT);
+
+
+
+//setting up PWM pins
+ ledcAttachPin(AIN1, 1);
+ ledcAttachPin(AIN2, 2);
+ ledcAttachPin(BIN1, 3);
+ ledcAttachPin(BIN2, 4);
+
+//sets up frequency and resolution (channel, frequency, resolution)
+ledcSetup(1, 12000, 8);
+ledcSetup(2, 12000, 8);
+ledcSetup(3, 12000, 8);
+ledcSetup(4, 12000, 8);
+
+//setting all pins off for intial movement
+ledcWrite(1, 0);
+ledcWrite(2, 0);
+ledcWrite(3, 0);
+ledcWrite(4, 0);
+
+}
+
+void loop() 
+{
+  
+ bias=-255;
+ Serial.println("bias: " +bias);
+ int direction=0;
+ Hbridge(direction); //calling H-bridge function for case 0
+ Serial.println("sending stop signal");
+ delay(100);
+ direction=1;
+ Hbridge(direction); //calling H-bridge function for case 1
+ Serial.println("sending forward signal");
+ delay(100);
+ direction=2;
+ Hbridge(direction); //calling H-bridge function for case 2
+ Serial.println("sending left signal");
+ delay(100);
+ direction=3;
+ Hbridge(direction); //calling H-bridge function for case 3
+ Serial.println("sending right signal");
+ delay(100);
+ direction=4;
+ Hbridge(direction); //calling H-bridge function for case 4
+ Serial.println("sending back signal");
+ delay(100);
+ bias++;
+ 
+ 
+ 
+}
+
+
+void Hbridge (int direction)
+{
+  
+  switch(direction)
+  {
+  case 0: 
+ledcWrite(1, 0);
+ledcWrite(2, 0);
+ledcWrite(3, 0);
+ledcWrite(4, 0);
+Serial.println("stopcase");
+//stop case
+  case 1: 
+  if(bias<0) //bias is a global variable edited by the main loop
+  {
+ledcWrite(1, 255+bias);
+ledcWrite(2, 0);
+ledcWrite(3, 0);
+ledcWrite(4, 255);
+  }
+  if(bias>=0)
+  {
+ledcWrite(1, 255);
+ledcWrite(2, 0);
+ledcWrite(3, 0);
+ledcWrite(4, 255-bias);
+  }
+Serial.println("forwardcase");
+//forward
+  case 2: 
+ledcWrite(1, 255);
+ledcWrite(2, 0);
+ledcWrite(3, 255);
+ledcWrite(4, 0);
+Serial.println("leftmovecase");
+//left
+  case 3: 
+ledcWrite(1, 0);
+ledcWrite(2, 255);
+ledcWrite(3, 0);
+ledcWrite(4, 255);
+Serial.println("rightmovecase");
+//right
+  case 4:
+ledcWrite(1, 0);
+ledcWrite(2, 255);
+ledcWrite(3, 255);
+ledcWrite(4, 0);
+Serial.println("backmovecase");
+//backward
+  }
+}
