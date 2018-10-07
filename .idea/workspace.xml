@@ -2,27 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59617a02-4a6a-4856-a3c8-7119c358e716" name="Default Changelist" comment="Added WiFiTest to ESP32 Folder">
-      <change afterPath="$PROJECT_DIR$/CommandCenter/test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CommandCenter/PublishTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/arduino.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/arduino.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/HBridge.ino.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/HBridge.ino.elf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/HBridge.ino.partitions.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/arduino.ar" beforeDir="false" afterPath="$PROJECT_DIR$/Build/arduino.ar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/build.options.json" beforeDir="false" afterPath="$PROJECT_DIR$/Build/build.options.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/includes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Build/includes.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/libraries/HTTPClient/HTTPClient.cpp.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/libraries/HTTPClient/HTTPClient.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/WiFiClientSecure.cpp.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/WiFiClientSecure.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/ssl_client.cpp.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/libraries/WiFiClientSecure/ssl_client.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Test1.ino.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Test1.ino.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Test1.ino.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Test1.ino.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/preproc/ctags_target_for_gcc_minus_e.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build/preproc/ctags_target_for_gcc_minus_e.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/Test1.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build/sketch/Test1.ino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/Test1.ino.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Build/sketch/Test1.ino.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CommandCenter/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CommandCenter/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommandCenter/test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CommandCenter/test.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeMos/Test1.ino" beforeDir="false" afterPath="$PROJECT_DIR$/WeMos/Test1.ino" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +37,7 @@
         <counts>
           <entry key="ino" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="11" />
+          <entry key="py" value="12" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
@@ -56,7 +45,7 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="11" />
+          <entry key="Python" value="12" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -64,17 +53,17 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="md" value="162" />
-          <entry key="py" value="3025" />
+          <entry key="py" value="3295" />
           <entry key="txt" value="89" />
-          <entry key="yaml" value="151" />
+          <entry key="yaml" value="168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="162" />
           <entry key="PLAIN_TEXT" value="98" />
-          <entry key="Python" value="3025" />
-          <entry key="YAML" value="151" />
+          <entry key="Python" value="3295" />
+          <entry key="YAML" value="168" />
         </counts>
       </usages-collector>
     </session>
@@ -96,21 +85,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CommandCenter/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
-                <marker date="1538882659507" expanded="true" signature="270:604" ph="..." />
-                <marker date="1538882659507" expanded="true" signature="617:729" ph="..." />
+                <element signature="e#0#34#0" expanded="true" />
+                <marker date="1538891630656" expanded="true" signature="271:605" ph="..." />
+                <marker date="1538891630656" expanded="true" signature="618:730" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CommandCenter/PublishTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CommandCenter/test.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="126">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -159,14 +161,15 @@
         <option value="$PROJECT_DIR$/PythonTest/Client.py" />
         <option value="$PROJECT_DIR$/PythonTest/Test.py" />
         <option value="$PROJECT_DIR$/PythonTest/Server.py" />
-        <option value="$PROJECT_DIR$/CommandCenter/Main.py" />
+        <option value="$PROJECT_DIR$/CommandCenter/PublishTest.py" />
         <option value="$PROJECT_DIR$/CommandCenter/test.yaml" />
+        <option value="$PROJECT_DIR$/CommandCenter/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1016" />
+    <option name="width" value="1107" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -237,28 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
-    <configuration name="Bluetooth" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Team6Lab2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonTest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTest/Bluetooth.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.PublishTest">
     <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Team6Lab2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,6 +275,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CommandCenter/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PublishTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Team6Lab2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CommandCenter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CommandCenter/PublishTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -345,18 +348,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Test" />
-      <item itemvalue="Python.Bluetooth" />
       <item itemvalue="Python.Client" />
       <item itemvalue="Python.Server" />
       <item itemvalue="Python.Main" />
+      <item itemvalue="Python.PublishTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PublishTest" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.Server" />
         <item itemvalue="Python.Client" />
-        <item itemvalue="Python.Bluetooth" />
       </list>
     </recent_temporary>
   </component>
@@ -389,22 +392,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1016" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="1107" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21370143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19550982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46659365" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989775" visible="true" weight="0.33734939" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010225" side_tool="true" weight="0.46659365" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -480,21 +483,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CommandCenter/test.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CommandCenter/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <marker date="1538882659507" expanded="true" signature="270:604" ph="..." />
-            <marker date="1538882659507" expanded="true" signature="617:729" ph="..." />
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1538891630656" expanded="true" signature="271:605" ph="..." />
+            <marker date="1538891630656" expanded="true" signature="618:730" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CommandCenter/test.yaml">
+    <entry file="file://$PROJECT_DIR$/CommandCenter/PublishTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="234">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -3,10 +3,11 @@ listeners:
     bind: 192.168.137.1:8000
     max-connections: 10
     type: tcp
+sys_interval: 20
 auth:
   allow-anonymous: true
 topic-check:
-  enabled': True
-  plugins':
+  enabled: True
+  plugins:
     - topic_taboo
 timeout-disconnect-delay: 2
