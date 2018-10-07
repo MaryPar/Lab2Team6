@@ -1,7 +1,7 @@
 {
-    "port": "COM4",
+    "port": "COM3",
     "board": "esp32:esp32:esp32",
-    "configuration": "PSRAM=disabled,PartitionScheme=default,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none",
-    "sketch": "ESP32\\HBridge\\HBridge.ino",
+    "configuration": "PSRAM=disabled,PartitionScheme=default,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=115200,DebugLevel=none",
+    "sketch": "WeMos\\Test1.ino",
     "output": "./Build"
 }

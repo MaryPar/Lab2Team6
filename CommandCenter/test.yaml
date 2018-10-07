@@ -1,0 +1,12 @@
+listeners:
+  default:
+    bind: 192.168.137.1:8000
+    max-connections: 10
+    type: tcp
+auth:
+  allow-anonymous: true
+topic-check:
+  enabled': True
+  plugins':
+    - topic_taboo
+timeout-disconnect-delay: 2

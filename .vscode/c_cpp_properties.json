@@ -4,8 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**",
-                "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\**",
-                "${workspaceFolder}\\ESP32\\RClient\\**"
+                "C:\\Users\\jacob\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\**"
             ],
             "forcedInclude": [],
             "intelliSenseMode": "msvc-x64"
