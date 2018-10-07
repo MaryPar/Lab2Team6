@@ -25,9 +25,9 @@ void writeOut(const int *src);
 void hBridge(int dir);
 #line 157 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\HBridge\\HBridge.ino"
 void toggleMotion();
-#line 177 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\HBridge\\HBridge.ino"
+#line 178 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\HBridge\\HBridge.ino"
 void setup();
-#line 203 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\HBridge\\HBridge.ino"
+#line 204 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\HBridge\\HBridge.ino"
 void loop();
 #line 20 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\ESP32\\HBridge\\HBridge.ino"
     void setupClient()
@@ -176,6 +176,7 @@ void toggleMotion()
         if (motionenabled)
         {
             motionenabled = false;
+            hBridge(-1);
         }
         else
         {
@@ -215,7 +216,7 @@ void setup()
 // loop is the main loop of the Arduino-C program
 void loop()
 {
-    delay(4000);
+    delay(5000);
 
     if (!motionenabled)
     {

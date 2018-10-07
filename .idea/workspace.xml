@@ -3,24 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="59617a02-4a6a-4856-a3c8-7119c358e716" name="Default Changelist" comment="Added WiFiTest to ESP32 Folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/arduino.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/arduino.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/MoveTest.ino.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/MoveTest.ino.elf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/MoveTest.ino.partitions.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/arduino.ar" beforeDir="false" afterPath="$PROJECT_DIR$/Build/arduino.ar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/build.options.json" beforeDir="false" afterPath="$PROJECT_DIR$/Build/build.options.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/includes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Build/includes.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/HBridge.ino.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Build/HBridge.ino.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/HBridge.ino.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Build/HBridge.ino.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/preproc/ctags_target_for_gcc_minus_e.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build/preproc/ctags_target_for_gcc_minus_e.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/MoveTest.ino.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/MoveTest.ino.cpp.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/sketch/MoveTest.ino.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommandCenter/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CommandCenter/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Build/sketch/HBridge.ino.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ESP32/HBridge/HBridge.ino" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/HBridge/HBridge.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESP32/RClient/RClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ESP32/RClient/RClient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonTest/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonTest/Server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonTest/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonTest/Test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +20,13 @@
     <session id="-1730100430">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonTest/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-860">
+            <state relative-caret-position="18">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -88,12 +77,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CommandCenter/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="180">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
                 <marker date="1537924200359" expanded="true" signature="102:206" ph="..." />
-                <marker date="1537924200359" expanded="true" signature="102:254" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonTest/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="216">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <marker date="1537924518536" expanded="true" signature="160:183" ph="..." />
               </folding>
@@ -149,7 +137,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="881" />
+    <option name="width" value="834" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -160,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,6 +185,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,15 +360,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="881" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="834" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12930012" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13693467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35596934" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48740417" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,13 +399,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ESP32/WiFiTest/WiFiTest.ino">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ESP32/WiFiTest/WiFiTest.ino" />
     <entry file="file://$PROJECT_DIR$/Documentation/CommandCenter.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -435,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonTest/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/socketserver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-137">
@@ -451,7 +426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonTest/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-860">
+        <state relative-caret-position="18">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -459,22 +434,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PythonTest/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CommandCenter/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
             <marker date="1537924200359" expanded="true" signature="102:206" ph="..." />
-            <marker date="1537924200359" expanded="true" signature="102:254" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonTest/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="216">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <marker date="1537924518536" expanded="true" signature="160:183" ph="..." />
           </folding>

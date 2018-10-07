@@ -68,7 +68,7 @@ class RClient
     };
 };
 
-const int Motors[4] = {12, 15, 27, 3d3}; // Motor output pins [A1N1, A1N2, B1N1, B1N2]
+const int Motors[4] = {12, 15, 27, 33}; // Motor output pins [A1N1, A1N2, B1N1, B1N2]
 
 const int Stop[4] = {0, 0, 0, 0};         // Stop pattern
 const int Forward[4] = {255, 0, 255, 0};  // Forward pattern
@@ -163,6 +163,7 @@ void toggleMotion()
         if (motionenabled)
         {
             motionenabled = false;
+            hBridge(-1);
         }
         else
         {
@@ -202,7 +203,7 @@ void setup()
 // loop is the main loop of the Arduino-C program
 void loop()
 {
-    delay(4000);
+    delay(5000);
 
     if (!motionenabled)
     {

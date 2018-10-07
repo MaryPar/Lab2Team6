@@ -169,6 +169,7 @@ void toggleMotion()
         if (motionenabled)
         {
             motionenabled = false;
+            hBridge(-1);
         }
         else
         {
@@ -208,7 +209,7 @@ void setup()
 // loop is the main loop of the Arduino-C program
 void loop()
 {
-    delay(4000);
+    delay(5000);
 
     if (!motionenabled)
     {
