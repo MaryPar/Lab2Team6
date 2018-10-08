@@ -3,10 +3,11 @@
 
 const char *ssid = "DESKTOP-PTFSVRE 2560";
 const char *password = "E404h58]";
-// const char* mqttServer = "m15.cloudmqtt.com";
+// const char* mqttServer = "mqtt://iot.eclipse.org";
 // const char* mqttServer = "127.0.0.1";
-IPAddress mqttServer(192, 168, 137, 1);
-const int mqttPort = 8000;
+IPAddress mqttServer(192, 168, 137, 194);
+
+const int mqttPort = 1883;
 const char *mqttUser = NULL;
 const char *mqttPassword = NULL;
 
@@ -57,7 +58,7 @@ void reconnect()
     {
       Serial.println("connected");
       // Subscribe
-      client.subscribe("esp32/test");
+      client.subscribe("esp32/test1");
     }
     else
     {
@@ -76,6 +77,6 @@ void loop()
   {
     reconnect();
   }
-  
+
   client.loop();
 }

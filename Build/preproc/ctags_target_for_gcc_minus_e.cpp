@@ -5,19 +5,20 @@
 
 const char *ssid = "DESKTOP-PTFSVRE 2560";
 const char *password = "E404h58]";
-// const char* mqttServer = "m15.cloudmqtt.com";
+// const char* mqttServer = "mqtt://iot.eclipse.org";
 // const char* mqttServer = "127.0.0.1";
-IPAddress mqttServer(192, 168, 137, 1);
-const int mqttPort = 8000;
+IPAddress mqttServer(192, 168, 137, 194);
+
+const int mqttPort = 1883;
 const char *mqttUser = 
-# 10 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino" 3 4
+# 11 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino" 3 4
                       __null
-# 10 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino"
+# 11 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino"
                           ;
 const char *mqttPassword = 
-# 11 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino" 3 4
+# 12 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino" 3 4
                           __null
-# 11 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino"
+# 12 "c:\\Users\\jacob\\PycharmProjects\\Team6Lab2\\WeMos\\Test1.ino"
                               ;
 
 WiFiClient espClient;
@@ -67,7 +68,7 @@ void reconnect()
     {
       Serial.println("connected");
       // Subscribe
-      client.subscribe("esp32/test");
+      client.subscribe("esp32/test1");
     }
     else
     {
